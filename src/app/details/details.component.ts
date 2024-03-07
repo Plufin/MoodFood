@@ -13,20 +13,21 @@ import { FoodItemsComponent } from '../food-items/food-items.component';
   imports: [CommonModule, FoodItemsComponent],
   template: `
     <article>
-      <h1 class="page-heading">Feeling {{ mood?.name }}?</h1>
+      <header>
+        <h1 class="page-heading">Feeling {{ mood?.name }}?</h1>
+      </header>
       <section class="listing-features">
         <ul>
           <li>{{ mood?.name }}</li>
           <li>{{ mood?.description }}</li>
         </ul>
-
-        <section class="listing">
-          <h2>Comfort Food</h2>
-          <app-food-items
-            *ngFor="let foodItem of foodItem"
-            [foodItem]="foodItem"
-          ></app-food-items>
-        </section>
+      </section>
+      <h2>Comfort Food</h2>
+      <section class="listing">
+        <app-food-items
+          *ngFor="let foodItem of foodItem"
+          [foodItem]="foodItem"
+        ></app-food-items>
       </section>
     </article>
   `,
