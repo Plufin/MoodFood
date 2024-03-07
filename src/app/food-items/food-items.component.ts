@@ -16,7 +16,6 @@ import { RouterModule } from '@angular/router';
       />
       <h2 class="food-heading">{{ foodItem.name }}</h2>
       <p class="food-mood">{{ foodItem.description }}, {{ foodItem.mood }}</p>
-      <a [routerLink]="['/detail', foodItem.name]">Learn More</a>
     </section>
   `,
   styleUrl: './food-items.component.css',

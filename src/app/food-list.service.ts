@@ -41,7 +41,7 @@ export class FoodListService {
       name: 'Chocolate Mousse',
       description: 'Light and airy chocolate mousse',
       photo: 'assets/food2.jpg',
-      mood: 'stressed',
+      mood: 'Stressed',
     },
     {
       name: 'Chocolate Pudding',
@@ -67,7 +67,7 @@ export class FoodListService {
     return this.foodItem;
   }
 
-  getFoodItem(name: string): FoodItem | undefined {
-    return this.foodItem.find((foodItem) => foodItem.name === name);
+  getMoodFoodItems(mood: string): FoodItem[] {
+    return this.foodItem.filter((foodItem) => foodItem.mood === mood);
   }
 }

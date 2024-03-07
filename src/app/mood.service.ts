@@ -8,27 +8,27 @@ export class MoodService {
   protected mood: Mood[] = [
     {
       name: 'Sad',
-      description: 'Feeling down? Try these comfort foods.',
+      description: 'Feeling down? These might help you feel better.',
       photo: 'assets/sad.jpg',
     },
     {
       name: 'Stressed',
-      description: 'Feeling overwhelmed? Try these comfort foods.',
+      description: 'Feeling overwhelmed? These might help you feel better.',
       photo: 'assets/food1.jpg',
     },
     {
       name: 'Bored',
-      description: 'Feeling uninterested? Try these comfort foods.',
+      description: 'Feeling uninterested? These might help you feel better.',
       photo: 'assets/sad.jpg',
     },
     {
       name: 'Tired',
-      description: 'Feeling exhausted? Try these comfort foods.',
+      description: 'Feeling exhausted? These might help you feel better.',
       photo: 'assets/food2.jpg',
     },
     {
       name: 'Unfocused',
-      description: 'Feeling distracted? Try these comfort foods.',
+      description: 'Feeling distracted? These might help you feel better.',
       photo: 'assets/sad.jpg',
     },
   ];

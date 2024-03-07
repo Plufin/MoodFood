@@ -8,10 +8,9 @@ import { RouterModule } from '@angular/router';
   imports: [HomeComponent, RouterModule],
   template: `
     <main>
-      <a [routerLink]="['/']"
-        ><h1>Home</h1>
-        <header class="brand-name"></header
-      ></a>
+      <a [routerLink]="['/']">
+        <header class="brand-name"><h1>MoodFood</h1></header></a
+      >
       <section class="content">
         <router-outlet></router-outlet>
       </section>

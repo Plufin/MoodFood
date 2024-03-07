@@ -1,29 +1,32 @@
+import { FoodListService } from './../food-list.service';
+import { FoodItem } from './../food-items';
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { MoodService } from './../mood.service';
 import { Mood } from './../mood';
+import { FoodItemsComponent } from '../food-items/food-items.component';
 
 @Component({
   selector: 'app-details',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FoodItemsComponent],
   template: `
     <article>
-      <img
-        class="mood-photo"
-        [src]="mood?.photo"
-        alt="Exterior photo of {{ mood?.name }}"
-      />
-      <section class="food-description">
-        <h2 class="food-heading">{{ mood?.name }}</h2>
-      </section>
+      <h1 class="page-heading">Feeling {{ mood?.name }}?</h1>
       <section class="listing-features">
-        <h2 class="section-heading">About this housing location</h2>
         <ul>
-          <li>Units available: {{ mood?.name }}</li>
-          <li>Does this location have wifi: {{ mood?.description }}</li>
+          <li>{{ mood?.name }}</li>
+          <li>{{ mood?.description }}</li>
         </ul>
+
+        <section class="listing">
+          <h2>Comfort Food</h2>
+          <app-food-items
+            *ngFor="let foodItem of foodItem"
+            [foodItem]="foodItem"
+          ></app-food-items>
+        </section>
       </section>
     </article>
   `,
@@ -34,8 +37,14 @@ export class DetailsComponent {
   MoodService = inject(MoodService);
   mood: Mood | undefined;
 
+  foodItem: FoodItem[] = [];
+  FoodListService: FoodListService = inject(FoodListService);
+
   constructor() {
     const moodName = String(this.route.snapshot.paramMap.get('name'));
     this.mood = this.MoodService.getMood(moodName);
+
+    const moodFood = moodName.toLowerCase();
+    this.foodItem = this.FoodListService.getMoodFoodItems(moodFood);
   }
 }

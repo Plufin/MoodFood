@@ -30,6 +30,7 @@ export class HomeComponent {
 
   constructor() {
     this.FoodItem = this.FoodListService.getAllFoodItems();
+
     this.Mood = this.MoodService.getAllMoods();
   }
 }
