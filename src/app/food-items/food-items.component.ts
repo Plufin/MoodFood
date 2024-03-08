@@ -9,12 +9,14 @@ import { RouterModule } from '@angular/router';
   imports: [CommonModule, RouterModule],
   template: `
     <section class="listing">
-      <img
-        class="food-photo"
-        [src]="foodItem.photo"
-        alt="Exterior photo of {{ foodItem.name }}"
-      />
-      <h2 class="food-heading">{{ foodItem.name }}</h2>
+      <a [routerLink]="['/item', foodItem.name]">
+        <img
+          class="food-photo"
+          [src]="foodItem.photo"
+          alt="Exterior photo of {{ foodItem.name }}"
+        />
+        <h2 class="food-heading">{{ foodItem.name }}</h2>
+      </a>
     </section>
   `,
   styleUrl: './food-items.component.css',

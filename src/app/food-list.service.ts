@@ -357,4 +357,8 @@ export class FoodListService {
   getMoodFoodItems(mood: string): FoodItem[] {
     return this.foodItem.filter((foodItem) => foodItem.mood === mood);
   }
+
+  getFoodItem(name: string): FoodItem | undefined {
+    return this.foodItem.find((foodItem) => foodItem.name === name);
+  }
 }

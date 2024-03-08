@@ -1,0 +1,35 @@
+.listing {
+  padding-top: 30px;
+  padding: 50px;
+}
+.food-heading {
+  color: var(--primary-color);
+  padding: 20px 20px 0 20px;
+  font-size: 28px;
+  font-weight: 500;
+}
+.food-photo {
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding-bottom: 5px;
+  transform: 0.3s;
+}
+.food-mood {
+  padding: 10px 20px 20px 20px;
+}
+
+.food-photo:hover {
+  transform: scale(1.1);
+}
+
+section.listing a {
+  padding-left: 20px;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+section.listing a::after {
+  content: "\203A";
+  margin-left: 5px;
+}
