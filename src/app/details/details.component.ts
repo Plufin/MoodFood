@@ -14,21 +14,23 @@ import { FoodItemsComponent } from '../food-items/food-items.component';
   template: `
     <article>
       <header>
-        <h1 class="page-heading">Feeling {{ mood?.name }}?</h1>
+        <img class="headerImage" src="assets/flowerRight.png" alt="header" />
+        <div class="circle">
+          <div class="banner">
+            <h1 class="bannerText">Feeling {{ mood?.name }}?</h1>
+          </div>
+          <p>{{ mood?.description }}</p>
+        </div>
+        <img class="headerImage" src="assets/flowerLeft.png" alt="header" />
       </header>
-      <section class="listing-features">
-        <ul>
-          <li>{{ mood?.name }}</li>
-          <li>{{ mood?.description }}</li>
-        </ul>
-      </section>
-      <h2>Comfort Food</h2>
-      <section class="listing">
-        <app-food-items
-          *ngFor="let foodItem of foodItem"
-          [foodItem]="foodItem"
-        ></app-food-items>
-      </section>
+      <div class="foodList">
+        <section class="listing">
+          <app-food-items
+            *ngFor="let foodItem of foodItem"
+            [foodItem]="foodItem"
+          ></app-food-items>
+        </section>
+      </div>
     </article>
   `,
   styleUrl: './details.component.css',

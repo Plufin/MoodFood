@@ -8,11 +8,11 @@ import { RouterModule } from '@angular/router';
   imports: [HomeComponent, RouterModule],
   template: `
     <main>
-      <a [routerLink]="['/']">
-        <header class="brand-name"><h1>MoodFood</h1></header></a
-      >
+      <nav class="brand-name">
+        <a [routerLink]="['/']"><h1>MoodFood</h1></a>
+      </nav>
       <section class="content">
-        <router-outlet></router-outlet>
+        <div class="moodBox"><router-outlet></router-outlet></div>
       </section>
     </main>
   `,

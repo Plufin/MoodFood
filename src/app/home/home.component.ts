@@ -13,11 +13,25 @@ import { MoodService } from '../mood.service';
   standalone: true,
   imports: [CommonModule, FoodItemsComponent, MoodComponent],
   template: `
-    <h1>Find your comfort food</h1>
-    <h2>based on the mood</h2>
-    <section class="results">
-      <app-mood *ngFor="let mood of Mood" [mood]="mood"></app-mood>
-    </section>
+    <article>
+      <header>
+        <img class="headerImage" src="assets/flowerRight.png" alt="header" />
+        <div class="middleHeader">
+          <h1 class="title">MoodFood</h1>
+          <div class="divider">
+            <h1>Find your comfort food</h1>
+            <h2>based on the mood</h2>
+          </div>
+        </div>
+        <img class="headerImage" src="assets/flowerLeft.png" alt="header" />
+      </header>
+      <div class="moodBox">
+        <h1>I am feeling...</h1>
+        <section class="results">
+          <app-mood *ngFor="let mood of Mood" [mood]="mood"></app-mood>
+        </section>
+      </div>
+    </article>
   `,
   styleUrl: './home.component.css',
 })

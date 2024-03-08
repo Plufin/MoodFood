@@ -15,7 +15,6 @@ import { RouterModule } from '@angular/router';
         alt="Exterior photo of {{ foodItem.name }}"
       />
       <h2 class="food-heading">{{ foodItem.name }}</h2>
-      <p class="food-mood">{{ foodItem.description }}, {{ foodItem.mood }}</p>
     </section>
   `,
   styleUrl: './food-items.component.css',

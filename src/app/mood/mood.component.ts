@@ -8,10 +8,10 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterModule],
   template: ` <section class="listing">
-    <img class="mood-photo" [src]="mood.photo" [alt]="mood.name" />
-    <h2 class="mood-heading">{{ mood.name }}</h2>
-    <p class="text-mood">{{ mood.description }}</p>
-    <a [routerLink]="['/mood', mood.name]">Learn More</a>
+    <a [routerLink]="['/mood', mood.name]">
+      <img class="mood-photo" [src]="mood.photo" [alt]="mood.name" />
+      <h2 class="mood-heading">{{ mood.name }}</h2>
+    </a>
   </section>`,
   styleUrl: './mood.component.css',
 })
