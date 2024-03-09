@@ -11,14 +11,39 @@ import { ActivatedRoute } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterModule, FoodItemsComponent],
   template: `
-    <section class="listing">
+    <main>
       <img
         class="food-photo"
         [src]="foodItem?.photo"
         alt="Exterior photo of {{ foodItem?.name }}"
       />
-      <h2 class="food-heading">{{ foodItem?.name }}</h2>
-    </section>
+      <div class="back-button">
+        <p>Back</p>
+      </div>
+      <article>
+        <div class="description">
+          <h1 class="food-heading">{{ foodItem?.name }}</h1>
+          <p class="food-description">{{ foodItem?.description }}</p>
+        </div>
+        <div class="nutrition">
+          <div class="nutrition-facts">
+            <h2>Nutrition Facts:</h2>
+            <p>Calories:</p>
+            <p>Protein:</p>
+            <p>Fat:</p>
+            <p>Carbs:</p>
+            <p>Fiber:</p>
+          </div>
+          <div class="note">
+            <h2>Note:</h2>
+            <p>
+              Plese note that these are suggestions, and may not be suitable for
+              everyone.
+            </p>
+          </div>
+        </div>
+      </article>
+    </main>
   `,
   styleUrl: './food-detail.component.css',
 })

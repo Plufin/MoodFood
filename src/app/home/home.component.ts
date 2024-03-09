@@ -3,7 +3,6 @@ import { FoodListService } from './../food-list.service';
 import { FoodItem } from './../food-items';
 import { Component, inject } from '@angular/core';
 import { FoodItemsComponent } from '../food-items/food-items.component';
-
 import { MoodComponent } from '../mood/mood.component';
 import { Mood } from '../mood';
 import { MoodService } from '../mood.service';

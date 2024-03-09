@@ -11,6 +11,10 @@ article {
   margin-top: 50px;
   justify-content: space-around;
 }
+.material-icons {
+  color: teal;
+  font-size: 12px;
+}
 
 button {
   padding: 10px;
