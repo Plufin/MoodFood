@@ -9,27 +9,27 @@ export class MoodService {
     {
       name: 'Sad',
       description: 'Feeling down? These might help you feel better.',
-      photo: 'assets/sad.jpg',
+      photo: 'assets/Sad.png',
     },
     {
       name: 'Stressed',
       description: 'Feeling overwhelmed? These might help you feel better.',
-      photo: 'assets/food1.jpg',
+      photo: 'assets/Stressed.png',
     },
     {
       name: 'Bored',
       description: 'Feeling uninterested? These might help you feel better.',
-      photo: 'assets/sad.jpg',
+      photo: 'assets/Bored.png',
     },
     {
       name: 'Tired',
       description: 'Feeling exhausted? These might help you feel better.',
-      photo: 'assets/food2.jpg',
+      photo: 'assets/Tired.png',
     },
     {
       name: 'Unfocused',
       description: 'Feeling distracted? These might help you feel better.',
-      photo: 'assets/sad.jpg',
+      photo: 'assets/Unfocused.png',
     },
   ];
 

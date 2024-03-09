@@ -57,6 +57,7 @@ header {
   padding: 80px;
   border-radius: 50px;
   min-width: 50%;
+  max-width: 50%;
   margin-bottom: 150px;
   font-size: 25px;
   color: var(--primary-color);

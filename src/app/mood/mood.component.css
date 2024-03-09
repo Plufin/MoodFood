@@ -8,10 +8,9 @@
   font-weight: 500;
 }
 .mood-photo {
-  height: 180px;
-  width: 180px;
+  max-width: 50%;
+  min-width: 90px;
   object-fit: cover;
-  border-radius: 50%;
   padding-bottom: 5px;
 }
 
