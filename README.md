@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
 
+### Still simple after one week. Nutritional values and recipes coming...
+
+<img src="src/assets/Home.png" alt="Home" height="250" /> <img src="src/assets/Mood.png" alt="Mood" height="250" />
+<img src="src/assets/Food.png" alt="Food" height="250" />
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
