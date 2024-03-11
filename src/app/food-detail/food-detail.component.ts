@@ -5,42 +5,31 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FoodItemsComponent } from '../food-items/food-items.component';
 import { ActivatedRoute } from '@angular/router';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-food-detail',
   standalone: true,
-  imports: [CommonModule, RouterModule, FoodItemsComponent],
+  imports: [CommonModule, RouterModule, FoodItemsComponent, MatIconModule],
   template: `
     <main>
+      <div class="back-button">
+        <a routerLink="/moods">
+          <button>
+            <mat-icon>chevron_left</mat-icon>
+            Go Back
+          </button>
+        </a>
+      </div>
       <img
         class="food-photo"
         [src]="foodItem?.photo"
         alt="Exterior photo of {{ foodItem?.name }}"
       />
-      <div class="back-button">
-        <p>Back</p>
-      </div>
       <article>
         <div class="description">
           <h1 class="food-heading">{{ foodItem?.name }}</h1>
           <p class="food-description">{{ foodItem?.description }}</p>
-        </div>
-        <div class="nutrition">
-          <div class="nutrition-facts">
-            <h2>Nutrition Facts:</h2>
-            <p>Calories:</p>
-            <p>Protein:</p>
-            <p>Fat:</p>
-            <p>Carbs:</p>
-            <p>Fiber:</p>
-          </div>
-          <div class="note">
-            <h2>Note:</h2>
-            <p>
-              Plese note that these are suggestions, and may not be suitable for
-              everyone.
-            </p>
-          </div>
         </div>
       </article>
     </main>

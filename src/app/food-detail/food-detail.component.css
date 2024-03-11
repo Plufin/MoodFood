@@ -2,21 +2,42 @@ article {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
+  background: var(--secondary-color);
+  position: relative;
+  z-index: 200;
+  margin-top: 100px;
+  width: 800px;
+  border-radius: 60px;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 .food-heading {
   color: var(--primary-color);
   font-size: 55px;
   font-weight: 500;
-  padding-bottom: 40px;
-  padding-top: 20px;
+  padding: 20px;
+  border-radius: 60px;
 }
 
 .description {
   display: flex;
   flex-direction: column;
   min-width: 65%;
-  align-items: flex-start;
-  padding-left: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  line-height: 1.5;
+}
+
+.food-description {
+  color: var(--primary-color);
+  font-size: 20px;
+  padding-bottom: 20px;
+  padding-top: 45px;
+  text-align: left;
+  padding-left: 10px;
+  border-top: 2px solid var(--primary-color);
 }
 
 .nutrition {
@@ -26,25 +47,21 @@ article {
   align-items: flex-start;
 }
 
-.nutrition-facts {
-  padding-bottom: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  max-width: 50%;
-}
-
 .food-photo {
   width: 100%;
-  height: 300px;
+  height: 500px;
   border-radius: 20px;
   object-fit: cover;
-  margin-bottom: 30px;
+  margin-bottom: -300px;
+  z-index: 1;
+  position: relative;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 2%;
@@ -56,6 +73,7 @@ main {
   padding-left: 10px;
   padding-top: 20px;
   padding-bottom: 30px;
+  position: relative;
 }
 
 h2 {
@@ -63,11 +81,4 @@ h2 {
   font-size: 30px;
   font-weight: 500;
   padding-bottom: 15px;
-}
-
-.note {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
 }

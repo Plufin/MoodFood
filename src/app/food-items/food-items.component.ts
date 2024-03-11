@@ -8,16 +8,16 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterModule],
   template: `
-    <section class="listing">
-      <a [routerLink]="['/item', foodItem.name]">
+    <a [routerLink]="['/item', foodItem.name]"
+      ><section class="listing">
         <img
           class="food-photo"
           [src]="foodItem.photo"
           alt="Exterior photo of {{ foodItem.name }}"
         />
         <h2 class="food-heading">{{ foodItem.name }}</h2>
-      </a>
-    </section>
+      </section>
+    </a>
   `,
   styleUrl: './food-items.component.css',
 })
