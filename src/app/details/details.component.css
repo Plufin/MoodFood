@@ -90,9 +90,10 @@ h1 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 22px;
   margin: 20px;
   color: var(--primary-color);
+  line-height: 1.2;
 }
 
 li {

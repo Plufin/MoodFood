@@ -14,15 +14,15 @@ import { MoodService } from '../mood.service';
   template: `
     <article>
       <header>
-        <img class="headerImage" src="assets/flowerRight.png" alt="header" />
+        <img class="headerImage" src="assets/flowerLeft2.png" alt="header" />
         <div class="middleHeader">
           <h1 class="title">MoodFood</h1>
           <div class="divider">
-            <h1>Find your comfort food</h1>
-            <h2>based on the mood</h2>
+            <h1>Find the food</h1>
+            <h2>based on your mood</h2>
           </div>
         </div>
-        <img class="headerImage" src="assets/flowerLeft.png" alt="header" />
+        <img class="headerImage" src="assets/flowerRight2.png" alt="header" />
       </header>
       <div class="moodBox">
         <h1>I am feeling...</h1>

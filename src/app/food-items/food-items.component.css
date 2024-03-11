@@ -13,8 +13,8 @@
   width: 180px;
   object-fit: cover;
   border-radius: 50%;
-  padding-bottom: 5px;
   transform: 0.3s;
+  box-shadow: 0px 4px 5px rgba(22, 22, 22, 0.5);
 }
 .food-mood {
   padding: 10px 20px 20px 20px;

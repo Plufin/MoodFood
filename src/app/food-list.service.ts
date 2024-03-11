@@ -139,7 +139,7 @@ export class FoodListService {
     {
       name: 'Whole Grains',
       description:
-        'Whole grains provide magnesium as well and are a good source of fiber, helping to keep blood sugar levels stable, which is crucial for managing stress. For those feeling tired, whole grains and legumes offer complex carbohydrates that provide a steady source of energy, helping to combat fatigue. These foods help maintain stable blood sugar levels, ensuring a consistent energy supply throughout the day.',
+        'Whole grains provide magnesium as well and are a good source of fiber, helping to keep blood sugar levels stable, which is crucial for managing stress. For those feeling tired, whole grains offer complex carbohydrates that provide a steady source of energy, helping to combat fatigue. These foods help maintain stable blood sugar levels, ensuring a consistent energy supply throughout the day.',
       contains: 'Magnesium',
       photo: 'assets/WholeGrain.jpg',
       mood: 'stressed',
@@ -204,7 +204,7 @@ export class FoodListService {
     {
       name: 'Whole Grains',
       description:
-        'For those feeling tired, whole grains and legumes offer complex carbohydrates that provide a steady source of energy, helping to combat fatigue. These foods help maintain stable blood sugar levels, ensuring a consistent energy supply throughout the day.',
+        'For those feeling tired, whole grains offer complex carbohydrates that provide a steady source of energy, helping to combat fatigue. These foods help maintain stable blood sugar levels, ensuring a consistent energy supply throughout the day.',
       contains: 'Complex Carbohydrates',
       photo: 'assets/WholeGrain.jpg',
       mood: 'tired',
@@ -337,7 +337,8 @@ export class FoodListService {
     },
     {
       name: 'Lean Meats',
-      description: '',
+      description:
+        'These foods provide high-quality protein and essential nutrients that support brain function and concentration. Eggs, for example, contain choline, a nutrient that is crucial for brain health and cognitive function. Lean meats and fish provide amino acids and omega-3 fatty acids, respectively, which are essential for maintaining the structure and function of brain cells, thereby helping to improve focus and reduce feelings of being unfocused.',
       contains: '',
       photo: 'assets/LeanMeat.jpg',
       mood: 'unfocused',

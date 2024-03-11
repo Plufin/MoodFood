@@ -1,7 +1,7 @@
 import { FoodItem } from './../food-items';
 import { FoodListService } from './../food-list.service';
 import { Component, Input, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, Location } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FoodItemsComponent } from '../food-items/food-items.component';
 import { ActivatedRoute } from '@angular/router';
@@ -13,12 +13,11 @@ import { MatIconModule } from '@angular/material/icon';
   imports: [CommonModule, RouterModule, FoodItemsComponent, MatIconModule],
   template: `
     <main>
-      <div class="back-button">
-        <a routerLink="/moods">
-          <button>
+      <div class="back-button-area">
+        <a (click)="goBack()">
+          <div class="back-button">
             <mat-icon>chevron_left</mat-icon>
-            Go Back
-          </button>
+          </div>
         </a>
       </div>
       <img
@@ -39,6 +38,7 @@ import { MatIconModule } from '@angular/material/icon';
 export class FoodDetailComponent {
   route: ActivatedRoute = inject(ActivatedRoute);
   FoodListService = inject(FoodListService);
+  location: Location = inject(Location);
   foodItem: FoodItem | undefined;
 
   constructor() {
@@ -46,5 +46,8 @@ export class FoodDetailComponent {
 
     const foodItem = moodFood;
     this.foodItem = this.FoodListService.getFoodItem(foodItem);
+  }
+  goBack() {
+    this.location.back();
   }
 }

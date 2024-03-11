@@ -8,27 +8,28 @@ export class MoodService {
   protected mood: Mood[] = [
     {
       name: 'Sad',
-      description: 'Feeling down? These might help you feel better.',
+      description: 'Maybe these treats will help you feel better!',
       photo: 'assets/Sad.png',
     },
     {
       name: 'Stressed',
-      description: 'Feeling overwhelmed? These might help you feel better.',
+      description: 'Pick a snack or two to help you feel better!',
       photo: 'assets/Stressed.png',
     },
     {
       name: 'Bored',
-      description: 'Feeling uninterested? These might help you feel better.',
+      description: 'Crunchy snack or a spicy treat? You decide!',
       photo: 'assets/Bored.png',
     },
     {
       name: 'Tired',
-      description: 'Feeling exhausted? These might help you feel better.',
+      description: 'Sleep is important, but so is a good and healthy snack!',
       photo: 'assets/Tired.png',
     },
     {
       name: 'Unfocused',
-      description: 'Feeling distracted? These might help you feel better.',
+      description:
+        'Daydreaming is okay, but now you need the snack for the task!',
       photo: 'assets/Unfocused.png',
     },
   ];

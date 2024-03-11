@@ -14,14 +14,14 @@ import { FoodItemsComponent } from '../food-items/food-items.component';
   template: `
     <article>
       <header>
-        <img class="headerImage" src="assets/flowerRight.png" alt="header" />
+        <img class="headerImage" src="assets/flowerLeft2.png" alt="header" />
         <div class="circle">
           <div class="banner">
             <h1 class="bannerText">Feeling {{ mood?.name }}?</h1>
           </div>
           <p>{{ mood?.description }}</p>
         </div>
-        <img class="headerImage" src="assets/flowerLeft.png" alt="header" />
+        <img class="headerImage" src="assets/flowerRight2.png" alt="header" />
       </header>
       <div class="foodList">
         <section class="listing">

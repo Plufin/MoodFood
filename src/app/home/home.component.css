@@ -4,6 +4,17 @@ article {
   align-items: center;
 }
 
+.divider h1 {
+  font-size: 40px;
+  color: var(--accent-color);
+  padding-top: 100px;
+}
+
+h2 {
+  font-size: 30px;
+  color: var(--accent-color);
+}
+
 .results {
   display: flex;
   flex-direction: row;
@@ -61,6 +72,11 @@ header {
   margin-bottom: 150px;
   font-size: 25px;
   color: var(--primary-color);
+  box-shadow: 0px 4px 10px rgba(22, 22, 22, 0.5);
+}
+
+.moodBox h1 {
+  font-size: 30px;
 }
 
 .headerImage {

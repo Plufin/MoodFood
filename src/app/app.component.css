@@ -1,8 +1,6 @@
 nav {
   padding: 20px;
-  padding-top: 20px;
   text-align: left;
-  font-size: 20px;
   background: var(--primary-color);
 }
 
@@ -14,4 +12,12 @@ a {
 section {
   text-align: center;
   font-size: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  padding: 10px;
+  padding-bottom: 0px;
 }
